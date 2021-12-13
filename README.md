@@ -36,23 +36,28 @@ sudo mv mips-x86.linux-xgcc.tar.gz /
 cd /
 sudo tar -zxvf mips-x86.linux-xgcc.tar.gz
 ```
-## Change directory reference of cross compiler in ~/nachos-4.0/code/test/Makefile
-
+## Trouble shooting
+error: /usr/local/nachos/decstation-ultrix/bin/gcc: Command not found
+solution: Tracing back the code, error generated in ~/nachos-4.0/code/test/Makefile. As nachOS is referring to the incorrect directory for gcc, we need to modify the gcc directory in ~/nachos-4.0/code/test to find the one we untarred in root.
 ```
 ...
+#GCCDIR = /usr/local/nachos/decstation-ultrix/bin/gcc
 GCCDIR = /mips-x86.linux-xgcc/
 ...
 ```
-
+error: gcc: installation problem, cannot exec 'cc1': No such file or directory
+solution: Tracing back the code, error generated in ~/nachos-4.0/code/test/Makefile. When processing halt.o
 ```
 ...
-CPP = /mips-x86.linux-xgcc/cpp0
-...
-```
-
-```
-...
+#CFLAGS = -G 0 -c $(INCDIR)
 CFLAGS = -G 0 -c $(INCDIR) -B/mips-x86.linux-xgcc/
+...
+```
+Also modify the cpp directory to find the one we untarred
+```
+...
+#CPP = /lib/cpp
+CPP = /mips-x86.linux-xgcc/cpp0
 ...
 ```
 ## Make NachOS-4.0
