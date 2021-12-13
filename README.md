@@ -36,16 +36,26 @@ sudo mv mips-x86.linux-xgcc.tar.gz /
 cd /
 sudo tar -zxvf mips-x86.linux-xgcc.tar.gz
 ```
-Change directory reference of cross compiler in ~/nachos-4.0/code/test/Makefile
+## Change directory reference of cross compiler in ~/nachos-4.0/code/test/Makefile
+
 ```
 ...
 GCCDIR = /mips-x86.linux-xgcc/
 ...
+```
+
+```
+...
 CPP = /mips-x86.linux-xgcc/cpp0
+...
+```
+
+```
 ...
 CFLAGS = -G 0 -c $(INCDIR) -B/mips-x86.linux-xgcc/
 ...
 ```
+
 Make NachOS-4.0
 ```
 cd ~/nachos-4.0/code
