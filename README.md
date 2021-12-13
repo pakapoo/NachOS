@@ -26,3 +26,13 @@ Download NachOS & Cross Compiler
 wget -d http://cc.ee.ntu.edu.tw/~farn/courses/OS/OS2015/projects/project.1/nachos-4.0.tar.gz
 wget -d http://cc.ee.ntu.edu.tw/~farn/courses/OS/OS2015/projects/project.1/mips-x86.linux-xgcc.tar.gz
 ```
+untar #nachos-4.0.tar.gz
+```
+tar -xvf nachos-4.0.tar.gz
+```
+move #mips-x86.linux-xgcc.tar.gz to root and untar
+```
+sudo mv mips-x86.linux-xgcc.tar.gz /
+cd /
+sudo tar -zxvf mips-x86.linux-xgcc.tar.gz
+```
