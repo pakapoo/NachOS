@@ -55,8 +55,7 @@ CPP = /mips-x86.linux-xgcc/cpp0
 CFLAGS = -G 0 -c $(INCDIR) -B/mips-x86.linux-xgcc/
 ...
 ```
-
-Make NachOS-4.0
+## Make NachOS-4.0
 ```
 cd ~/nachos-4.0/code
 make
