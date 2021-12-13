@@ -28,9 +28,9 @@ wget -d http://cc.ee.ntu.edu.tw/~farn/courses/OS/OS2015/projects/project.1/mips-
 ```
 untar **nachos-4.0.tar.gz**
 ```
-tar -xvf nachos-4.0.tar.gz
+tar -zxvf nachos-4.0.tar.gz
 ```
-move **mips-x86.linux-xgcc.tar.gz** to root and untar
+move **mips-x86.linux-xgcc.tar.gz** from home to root and untar
 ```
 sudo mv mips-x86.linux-xgcc.tar.gz /
 cd /
