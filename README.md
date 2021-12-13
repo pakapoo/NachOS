@@ -46,7 +46,7 @@ GCCDIR = /mips-x86.linux-xgcc/
 ...
 ```
 **error:** gcc: installation problem, cannot exec 'cc1': No such file or directory<br/>
-**solution:** Tracing back the code, error generated in ~/nachos-4.0/code/test/Makefile.
+**solution:** Tracing back the code, error generated in ~/nachos-4.0/code/test/Makefile from the command of halt.o.
 ```
 ...
 #CFLAGS = -G 0 -c $(INCDIR)
