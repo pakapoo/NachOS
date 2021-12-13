@@ -37,23 +37,24 @@ cd /
 sudo tar -zxvf mips-x86.linux-xgcc.tar.gz
 ```
 ## Trouble shooting
-error: /usr/local/nachos/decstation-ultrix/bin/gcc: Command not found<br/>
-solution: Tracing back the code, error generated in ~/nachos-4.0/code/test/Makefile. As nachOS is referring to the incorrect directory for gcc, we need to modify the gcc directory in ~/nachos-4.0/code/test to find the one we untarred in root.
+**error:** /usr/local/nachos/decstation-ultrix/bin/gcc: Command not found<br/>
+**solution:** Tracing back the code, error generated in ~/nachos-4.0/code/test/Makefile. Change GCC directory to the one we untarred in root.
 ```
 ...
 #GCCDIR = /usr/local/nachos/decstation-ultrix/bin/gcc
 GCCDIR = /mips-x86.linux-xgcc/
 ...
 ```
-error: gcc: installation problem, cannot exec 'cc1': No such file or directory<br/>
-solution: Tracing back the code, error generated in ~/nachos-4.0/code/test/Makefile. When generating halt.o, cc1 has to be used
+**error:** gcc: installation problem, cannot exec 'cc1': No such file or directory<br/>
+**solution:** Tracing back the code, error generated in ~/nachos-4.0/code/test/Makefile.
 ```
 ...
 #CFLAGS = -G 0 -c $(INCDIR)
 CFLAGS = -G 0 -c $(INCDIR) -B/mips-x86.linux-xgcc/
 ...
 ```
-Also modify the cpp directory to find the one we untarred
+**error:** 
+**solution:** 
 ```
 ...
 #CPP = /lib/cpp
