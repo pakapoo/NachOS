@@ -66,3 +66,5 @@ CPP = /mips-x86.linux-xgcc/cpp0
 cd ~/nachos-4.0/code
 make
 ```
+## Reference
+C compilation command options: https://caiorss.github.io/C-Cpp-Notes/compiler-flags-options.html<br/>
