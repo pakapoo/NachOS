@@ -46,15 +46,14 @@ GCCDIR = /mips-x86.linux-xgcc/
 ...
 ```
 **error:** gcc: installation problem, cannot exec 'cc1': No such file or directory<br/>
-**solution:** Tracing back the code, error generated in ~/nachos-4.0/code/test/Makefile from the C compilation command of halt.o.
+**solution:** Tracing back the code, error generated in ~/nachos-4.0/code/test/Makefile from the C compilation command of halt.o. cc1 is one of the gcc compiler's subprogram. Because that cc1 is not in /usr/lib/gcc/ or /usr/local/lib/gcc/, compiler is not able find it. Thus, we specified the directory with -B directory search option.
 ```
 ...
 #CFLAGS = -G 0 -c $(INCDIR)
 CFLAGS = -G 0 -c $(INCDIR) -B/mips-x86.linux-xgcc/
 ...
 ```
-**error:** 
-**solution:** 
+**solution:** Make sure all subprograms that compiler driver program runs have the correct directory, including cpp, cc1, as and ld.
 ```
 ...
 #CPP = /lib/cpp
