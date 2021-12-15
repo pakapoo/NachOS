@@ -67,4 +67,4 @@ cd ~/nachos-4.0/code
 make
 ```
 ## Reference
-C compilation command options: https://caiorss.github.io/C-Cpp-Notes/compiler-flags-options.html<br/>
+GCC manual_3.16 Options for Directory Search: https://gcc.gnu.org/onlinedocs/gcc/Directory-Options.html<br/>
