@@ -67,3 +67,4 @@ make
 ```
 ## Reference
 GCC manual_3.16 Options for Directory Search: https://gcc.gnu.org/onlinedocs/gcc/Directory-Options.html<br/>
+Course website: http://cc.ee.ntu.edu.tw/~farn/courses/OS/OS2015/index.htm
