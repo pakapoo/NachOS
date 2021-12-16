@@ -66,6 +66,7 @@ cd ~/nachos-4.0/code
 make
 ```
 ## Reference
-Course website: http://cc.ee.ntu.edu.tw/~farn/courses/OS/OS2015/index.htm
+NTU OS 2015 (Professor: Farn Wang): http://cc.ee.ntu.edu.tw/~farn/courses/OS/OS2015/index.htm
+NTHU OS 2015 Homework (Dr. Jerry Chou): http://lms.nthu.edu.tw/course.php?courseID=22910&f=hwlist
 GCC manual_3.16 Options for Directory Search: https://gcc.gnu.org/onlinedocs/gcc/Directory-Options.html<br/>
 跟我一起写 Makefile: https://seisman.github.io/how-to-write-makefile/Makefile.pdf
