@@ -53,7 +53,7 @@ GCCDIR = /mips-x86.linux-xgcc/
 CFLAGS = -G 0 -c $(INCDIR) -B/mips-x86.linux-xgcc/
 ...
 ```
-**solution:** Make sure all subprograms that compiler driver program runs have the correct directory, including cpp, cc1, as and ld.
+To prevent future error, make sure all subprograms that compiler driver program runs have the correct directory, including cpp, cc1, as and ld.
 ```
 ...
 #CPP = /lib/cpp
