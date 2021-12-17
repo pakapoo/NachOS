@@ -66,8 +66,8 @@ cd ~/nachos-4.0/code
 make
 ```
 ## Reference
-NTU OS 2015 (Professor: Farn Wang): http://cc.ee.ntu.edu.tw/~farn/courses/OS/OS2015/index.htm<br/>
-NTHU OS 2015 Homework (Dr. Jerry Chou): http://lms.nthu.edu.tw/course.php?courseID=22910&f=hwlist<br/>
-GCC manual_3.16 Options for Directory Search: https://gcc.gnu.org/onlinedocs/gcc/Directory-Options.html<br/>
-跟我一起写 Makefile: https://seisman.github.io/how-to-write-makefile/Makefile.pdf<br/>
-https://github.com/pai4451/OS2020<br/>
+1. NTU OS 2015 (Professor: Farn Wang): http://cc.ee.ntu.edu.tw/~farn/courses/OS/OS2015/index.htm<br/>
+2. NTHU OS 2015 Homework (Dr. Jerry Chou): http://lms.nthu.edu.tw/course.php?courseID=22910&f=hwlist<br/>
+3. GCC manual_3.16 Options for Directory Search: https://gcc.gnu.org/onlinedocs/gcc/Directory-Options.html<br/>
+4. 跟我一起写 Makefile: https://seisman.github.io/how-to-write-makefile/Makefile.pdf<br/>
+5. https://github.com/pai4451/OS2020<br/>
